@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Document File Index Search</h2>
+    
+    <!-- Search Section -->
+    <div class="search-section">
+      <h3>Search Files</h3>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Enter keywords to search...">
+        <button id="searchBtn" class="btn primary">Search</button>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    
+    <!-- Indexed Files Section -->
+    <div class="indexed-files-section">
+      <div class="indexed-files-header-row">
+        <h3>Indexed Files</h3>
+        <div class="action-buttons">
+          <button id="downloadIndexBtn" class="btn secondary small">Download Index</button>
+          <button id="clearAllBtn" class="btn danger small">Clear All Data</button>
+        </div>
+      </div>
+      <div id="indexedFilesList" class="indexed-files-list"></div>
+    </div>
+    
+    <!-- Upload Section -->
+    <div class="upload-section">
+      <h3>Upload Files</h3>
+      <div class="upload-area" id="uploadArea">
+        <div class="upload-content">
+          <i class="upload-icon">📁</i>
+          <p>Drop files here or click to browse</p>
+          <small>Maximum 5 files • Supports PDF, DOC, DOCX, TXT • Max 10MB each</small>
+          <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx,.txt">
+        </div>
+      </div>
+      <div class="file-list" id="fileList"></div>
+      <div class="actions">
+        <button id="clearBtn" class="btn secondary">Clear All</button>
+        <button id="uploadBtn" class="btn primary" disabled>Upload & Index Files</button>
+      </div>
+    </div>
+    
+    <!-- Donation Section -->
+    <div class="donation-section">
+      <div class="donation-content">
+        <span class="donation-text">❤️ Support this project</span>
+        <button id="donateBtn" class="btn donation">Donate</button>
+      </div>
+    </div>
+    
+    <!-- Server Status -->
+    <div class="status-section">
+      <span id="serverStatus" class="status">Checking server...</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
