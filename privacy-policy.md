@@ -62,6 +62,10 @@ We may update this privacy policy from time to time. Any changes will be posted 
 
 ## Contact Information
 
-For questions about this privacy policy or data practices, you can contact us through the Chrome Web Store support section for this extension.
+For questions about this privacy policy or data practices:
+
+- **Extension Support:** [GitHub Repository](https://github.com/SawsanDaban/docextension)
+- **Issues:** [Report Issues](https://github.com/SawsanDaban/docextension/issues)
+- **Chrome Web Store:** Contact through extension support section
 
 This privacy policy applies specifically to the "Document File Index Search" Chrome extension and associated backend services.
